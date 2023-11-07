@@ -1,0 +1,229 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+}
+.header{
+    top: 0;
+    position: sticky;
+    display: inline-block;
+    height: 14vh;
+    border: none;
+    width: 100%;
+    margin: none;
+    box-shadow: 0 0 18px 10px grey;
+    font-size: x-large;
+    background-color: rgba(255,255, 255, 1);
+    z-index: 1;
+    padding-right: 3vh;
+    padding-top: 4vh;
+    overflow: hidden;
+}
+nav{
+    text-align: right;
+}
+.logo{
+    text-align: left;
+    float: left;
+}
+.hero-section{
+    top: 20vh;
+    height: 100vh;
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 6vh;
+    background-image: url(/about/welcome-banner.jpg);
+    background-color: blue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    padding-top: 20%;
+    bottom: 7vh;
+    color: white;
+}
+.introduction{
+    margin-top: 6vh;
+    margin-bottom: 25vh;
+    height: 70vh;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.mini{
+    width: calc(45%);
+    height: 100%;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+    background-size: cover;
+    opacity: 0.8;
+    display: inline;
+    background-repeat: no-repeat;
+}
+.small-icons{
+    margin-top: 60%;
+    background-color: rgb(115, 255, 0) 0.9;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+}
+.bottom{
+    margin-top: 3vh;
+    border: none;
+    border-top: 3px solid black;
+}
+.cont{
+    margin-top: 3vh;
+    display: inline-block;
+    width: 40%;
+    border: none;
+    border-left: 2px solid black;
+}
+.education{
+    margin-top: 6vh;
+    height: 90vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 5px;
+    padding-left: 5vw;
+    margin-bottom: 25vh;
+}
+.e-mini{
+    text-align: center;
+    height: 10vh;
+    margin-bottom: 2vh;
+    bottom: 10px;
+    padding-top: 5vh;
+}
+.e-max{
+    margin-top: none;
+    text-align: center;
+    top: 0;
+    height: 75vh;
+}
+.profile{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 60vh;
+    margin-top: 6vh;
+    text-align: center;
+    margin-bottom: 25vh;
+}
+.prof-int{
+    margin-top: 3vh;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+.int{
+    border-right: 2px solid black;
+}
+.last{
+    border-right: none;
+}
+.icons{
+    top: 7vh;
+    height: calc(50%);
+    width: calc(50%);
+}
+.c{
+    padding-top: 7vh;
+    
+}
+.c::after{
+    position: absolute;
+    content: "";
+    background-color: black;
+    background-size: cover;
+    transition: all 0.5s ease-in-out;
+}
+.c:hover{
+    /* background-color: blueviolet; */
+    transition: all 0.5s ease-in-out;
+}
+.c:hover::after{
+    width: 200px;
+    height: 100px;
+    transition: all 0.5s ease-in-out;
+}
+.icons:hover{
+    scale: 1.2;
+    color: initial;
+    transition: all 0.4s ease-in-out;
+}
+.footer{
+    height: 90vh;
+    margin-top: 26vh;
+    
+}
+.int{
+    margin-bottom: 10vh;
+}
+.row1{
+    display: block;
+}
+.row2{
+    display: inline-block;
+    text-align: initial;
+}
+.contact-int{
+    width: 45%;
+    height: 60vh;
+}
+input{
+    height: 5vh;
+    margin-right: 3vh;
+}
+.w{
+    margin-bottom: 3vh;
+    margin-right: 3vh;
+}
+h1{
+    margin: 6vh;
+    text-align: center;
+}
+.row4{
+    left: 50%;
+    text-align: center;
+}
+button{
+    appearance: none;
+    height: 6vh;
+    width: 8vw;
+    padding: 4opx;
+    background-color: darkslategrey;
+    box-shadow: 0px 0px 6px  red;
+
+}
+a:link{
+    background-color: transparent;
+    text-decoration: none;
+    padding: 3vh;
+    
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    border-radius: 4vh;
+}
+a:visited{
+    background-color: rgba(5, 5, 170, 0.466);
+    color: rgb(247, 7, 7);
+    transform: translateY(-20%);
+}
+a:hover, a:focus{
+    color: white;
+    background-color: rgba(47, 3, 88, 0.486);
+    font-variant: small-caps;
+    scale: 1.5;
+    transform: translateY(-30%);
+    transition: all 0.6s ease-in-out;
+
+}
+a:active{
+    background-color: rgba(211, 6, 252, 1);
+}
