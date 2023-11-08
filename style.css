@@ -31,7 +31,7 @@ nav{
     text-align: center;
     font-size: xx-large;
     margin-top: 6vh;
-    background-image: url(/about/welcome-banner.jpg);
+    background-image: url(./about/welcome-banner.jpg);
     background-color: blue;
     background-repeat: no-repeat;
     background-size: cover;
@@ -135,21 +135,43 @@ nav{
     padding-top: 7vh;
     
 }
-.c::after{
+/* implenting scale animation */
+.prof-int.c::after{
     position: absolute;
-    content: "";
-    background-color: black;
-    background-size: cover;
-    transition: all 0.5s ease-in-out;
+    content: '';
+    background-color: blueviolet;
+    width: 336px;
+    height: 225px;
+    padding: 0;
+    display: grid;
+    /* transform: translateY(-60.8%); */
+    margin-top: -10.2%;
+    transform-origin: center;
+    transform: scale(0);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    z-index: -1;
 }
-.c:hover{
+.int.c::after{
+    position: absolute;
+    content: '';
+    background-color: blueviolet;
+    width: 336px;
+    height: 243px;
+    padding: 0;
+    display: grid;
+    /* transform: translateY(-90.8%); */
+    margin-top: -11%;
+    transform-origin: center;
+    transform: scale(0);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    z-index: -1;
+}
+/* Hover effect animation */
+.int.c:hover::after, .prof-int.c:hover::after{
     /* background-color: blueviolet; */
-    transition: all 0.5s ease-in-out;
-}
-.c:hover::after{
-    width: 200px;
-    height: 100px;
-    transition: all 0.5s ease-in-out;
+    transform-origin: center;
+    transform: scale(1);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
 }
 .icons:hover{
     scale: 1.2;
@@ -226,4 +248,84 @@ a:hover, a:focus{
 }
 a:active{
     background-color: rgba(211, 6, 252, 1);
+}
+
+.contact-int.left form{
+    border: 2px solid #5e5e5e;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+form{
+    box-shadow: 0 4px 8px 0 rgba(126, 126, 126, 0.2), 0 6px 20px 0 rgba(90, 90, 90, 0.19);
+}
+.contact-int.left form input, form textarea{
+    background-color: #f5f5f5;
+    border-style: none;
+    border-radius: 5px;
+    padding: 18px;
+    border: 2px solid #5e5e5e;
+    margin-top: 30px;
+    width: 50%;
+}
+textarea{
+    margin-bottom: 30px;
+    transform: translateX(-8px);
+}
+form button{
+    transform: translateX(-8px);
+    width: 50%;
+    background-color: blueviolet;
+    box-shadow: none;
+    border-style: none;
+    border-radius: 5px;
+}
+.contact-int.left{
+    padding-left: 10px;
+    height: 75vh;
+}
+.contact-int.right{
+    border-left: 2px solid blueviolet;
+    padding-left: 8%;
+    height: 75vh;
+    font-family: sans-serif;
+}
+.contact-int.right h3{
+    font-size: 2.5em;
+    color: blueviolet;
+    margin-bottom: 0px;
+    padding: 30px 0;
+}
+.contact-int.right h4{
+    font-size: 1em;
+    font-weight: 600;
+    color: rgba(137, 43, 226, 0.829);
+    margin-top: 10px;
+}
+.contact-int.right span{
+    font-size: 1em;
+    font-weight: 400;
+}
+.footer .head{
+    font-family: sans-serif;
+    text-align: left;
+    color: blueviolet;
+    display: flex;
+}
+.footer .head span{
+    background-color: blueviolet;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+}
+#profile{
+    font-family: sans-serif;
+}
+#profile span{
+    color: blueviolet;
 }
